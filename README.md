@@ -22,10 +22,10 @@ A REST api written in Django
         ```bash
             $ cd Inventory_Management
         ```
-    2. Create and fire up your virtual environment:
+    2. Create and fire up your virtual environment (Windows Env):
         ```bash
-            $ virtualenv  venv -p python3
-            $ source venv/bin/activate
+            python -m venv my_env
+            my_env\Scripts\activate
         ```
     3. Install the dependencies needed to run the app:
         ```bash
