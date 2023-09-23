@@ -10,10 +10,17 @@ from django.http import Http404
 
 
 class ProductsViewSet(viewsets.ModelViewSet):
+    '''
+    Viewsets for Products Table, manages all CRUD Operations
+    '''
     queryset = Products.objects.all()
     serializer_class = ProductsSerializer
 
 class SalesList(APIView):
+
+    '''
+    Display and Create Functions for Sales Table
+    '''
 
     def get(self,request):
         sales = Sales.objects.all()
@@ -30,6 +37,10 @@ class SalesList(APIView):
 
 
 class SalesListInfo(APIView):
+
+    '''
+    GET Particular Transaction Sales Table
+    '''
 
     def get_object(self,pk):
         try:
