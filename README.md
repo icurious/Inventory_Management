@@ -52,7 +52,9 @@ A REST api written in Django
     (Choose the operation with Arrow and give necessary inputs)
 
 
-    *** If Faced with Import Error for this File, related to collections module
+    *** If Faced with Import Error for this File, 
+    ImportError: cannot import name 'Mapping' from 'collections' (C:\Python3\lib\collections\__init__.py)
+    related to collections module
     Change in this file - \[my_env]\lib\site-packages\prompt_toolkit\styles\from_dict.py
     from collections.abc import Mapping instead of from collections import Mapping
 
